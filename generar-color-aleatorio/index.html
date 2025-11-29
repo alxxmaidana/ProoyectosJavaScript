@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="img/circulo-de-color.png" />
+
+    <title>Colores Aleatorios</title>
+  </head>
+  <body>
+    <section class="main-container">
+      <div class="inputs-container">
+        <input
+          id="modelo-hexadecimal"
+          value="HEX"
+          type="radio"
+          name="modelo-color"
+          checked
+        />
+        <label for="modelo-hexadecimal"><p>Código Hexadecimal</p></label>
+        
+        <input 
+          id="modelo-rgb"
+          value="RGB"
+          type="radio"
+          name="modelo-color" 
+          />
+        <label for="modelo-rgb">Código RGB</label>
+        
+        <input
+          id="modelo-rgba"
+          value="RGBA"
+          type="radio"
+          name="modelo-color"
+        />
+        <label for="modelo-rgba">Código RBGA</label>
+        
+      </div>
+      <h1 translate="no">Background color: <span id="color">#FFFFFF</span></h1>
+      <button id="cambiar-color">Click aquí</button>
+    </section>
+
+    <script src="generarColorAleatorio.js"></script>
+  </body>
+</html>
